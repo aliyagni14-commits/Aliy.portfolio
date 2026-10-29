@@ -1,266 +1,153 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080b12">
-<meta name="description" content="The personal portfolio of Aliy Agni a.n.w. — developer, creator, and technology enthusiast.">
+<meta name="theme-color" content="#080b14">
+<meta name="description" content="Portofolio Aliy Agni a.n.w. — pengembang pemula, pendiri JOD Studios, dan pencipta Aksikontal.">
 <title>Aliy Agni a.n.w. | Portfolio</title>
 <style>
-:root {
-  --bg: #080b12;
-  --surface: #101622;
-  --border: #253147;
-  --text: #f1f5ff;
-  --muted: #98a6bd;
-  --blue: #72a7ff;
-}
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
-}
-a { color: inherit; text-decoration: none; }
-.wrap { width: min(1060px, 90%); margin: auto; }
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 22px 0;
-  border-bottom: 1px solid var(--border);
-}
-.logo { font-weight: 800; letter-spacing: 1px; }
-.logo span { color: var(--blue); }
-.navlinks { display: flex; gap: 22px; font-size: 14px; color: var(--muted); }
-.navlinks a:hover, .textlink:hover { color: var(--blue); }
-.hero { padding: 100px 0 85px; }
-.eyebrow {
-  color: var(--blue);
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 12px;
-  font-weight: bold;
-}
-h1 {
-  font-size: clamp(42px, 8vw, 78px);
-  line-height: 1.08;
-  letter-spacing: -3px;
-  margin: 18px 0;
-}
-h1 span {
-  color: var(--blue);
-}
-.intro { max-width: 620px; color: var(--muted); font-size: 17px; }
-.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
-.btn {
-  display: inline-block;
-  border: 1px solid var(--border);
-  padding: 11px 18px;
-  border-radius: 8px;
-  font-size: 14px;
-  font-weight: bold;
-}
-.btn.primary { background: var(--blue); color: #08101e; border-color: var(--blue); }
-.btn:hover { transform: translateY(-2px); }
-section { padding: 55px 0; }
-.sectionhead { margin-bottom: 25px; }
-h2 { font-size: 29px; margin: 0 0 8px; }
-.subtitle { color: var(--muted); margin: 0; }
-.about {
-  border: 1px solid var(--border);
-  background: var(--surface);
-  border-radius: 14px;
-  padding: 25px;
-}
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-}
-.card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 13px;
-  padding: 23px;
-  transition: border-color .2s, transform .2s;
-}
-.card:hover { border-color: var(--blue); transform: translateY(-3px); }
-.number { color: var(--blue); font-size: 13px; letter-spacing: 2px; }
-.card h3 { margin: 12px 0 6px; font-size: 21px; }
-.card p { color: var(--muted); font-size: 14px; margin: 0 0 15px; }
-.status {
-  display: inline-block;
-  color: #b9d3ff;
-  border: 1px solid #30496f;
-  background: #17253b;
-  border-radius: 30px;
-  padding: 3px 10px;
-  font-size: 11px;
-}
-.skills { display: flex; flex-wrap: wrap; gap: 10px; }
-.skill {
-  border: 1px solid var(--border);
-  padding: 8px 13px;
-  border-radius: 7px;
-  background: var(--surface);
-  color: #d6e2f7;
-  font-size: 13px;
-}
-footer {
-  border-top: 1px solid var(--border);
-  padding: 25px 0;
-  color: var(--muted);
-  font-size: 12px;
-  text-align: center;
-}
-@media (max-width: 600px) {
-  .navlinks { gap: 12px; font-size: 12px; }
-  .hero { padding: 70px 0 55px; }
-  h1 { letter-spacing: -2px; }
-  .projects { grid-template-columns: 1fr; }
-  section { padding: 38px 0; }
-}
+:root{--bg:#080b14;--panel:#111827;--blue:#60a5fa;--text:#f3f4f6;--muted:#9ca3af}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at top,#14213b 0, var(--bg) 55%);color:var(--text);font-family:Arial,sans-serif;line-height:1.7}
+a{color:inherit;text-decoration:none}
+nav{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:15px 7%;background:#080b14eF;border-bottom:1px solid #ffffff15;backdrop-filter:blur(12px)}
+.logo{font-weight:900;letter-spacing:1px;color:var(--blue)}
+.navlinks{display:flex;gap:16px;font-size:13px;flex-wrap:wrap}
+.navlinks a:hover{color:var(--blue)}
+main{max-width:1050px;margin:auto;padding:0 22px}
+.hero{min-height:78vh;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding:65px 0;animation:appear 1s ease both}
+.eyebrow{color:var(--blue);font-size:12px;font-weight:bold;letter-spacing:3px;text-transform:uppercase}
+h1{font-size:clamp(38px,8vw,76px);line-height:1.08;letter-spacing:-2px;margin:16px 0}
+h1 span{color:var(--blue)}
+p{color:var(--muted)}
+.hero p{max-width:580px;font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+.btn{display:inline-block;border:1px solid #334155;border-radius:10px;padding:11px 17px;font-weight:bold;font-size:14px;transition:.2s}
+.btn.primary{background:var(--blue);color:#07111f;border-color:var(--blue)}
+.btn:hover{transform:translateY(-3px);border-color:var(--blue)}
+section{padding:55px 0;scroll-margin-top:65px}
+.section-label{color:var(--blue);font-size:12px;letter-spacing:3px;font-weight:bold}
+h2{font-size:clamp(27px,5vw,38px);margin:8px 0 22px}
+.about,.project{background:linear-gradient(135deg,#111827,#0d1320);border:1px solid #ffffff12;border-radius:18px;padding:24px}
+.about p{margin-bottom:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.project{display:flex;flex-direction:column;transition:transform .25s,border-color .25s}
+.project:hover{transform:translateY(-5px);border-color:#60a5fa88}
+.project-icon{font-size:27px}
+.project h3{margin:10px 0 0;font-size:21px}
+.project p{flex:1;font-size:14px}
+.tag{display:inline-block;align-self:flex-start;border:1px solid #334155;border-radius:20px;padding:3px 9px;font-size:11px;color:var(--blue)}
+.progress-label{display:flex;justify-content:space-between;gap:10px;font-size:12px;margin:15px 0 6px;color:#d1d5db}
+.progress{height:7px;border-radius:10px;background:#263244;overflow:hidden}
+.progress div{height:100%;background:linear-gradient(90deg,#3b82f6,#93c5fd);border-radius:10px;animation:fill 1.4s ease both}
+.skills{display:flex;flex-wrap:wrap;gap:10px}
+.skills span{background:#111827;border:1px solid #263244;padding:8px 12px;border-radius:9px;font-size:13px}
+footer{text-align:center;border-top:1px solid #ffffff15;padding:28px 15px;color:var(--muted);font-size:12px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@keyframes appear{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fill{from{width:0}}
+@media(min-width:700px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){nav{padding:13px 16px;align-items:flex-start}.navlinks{gap:9px;font-size:11px;justify-content:flex-end}.logo{font-size:13px;white-space:nowrap}.hero{min-height:70vh;padding:45px 0}.hero p{font-size:15px}.grid{grid-template-columns:1fr}.about,.project{padding:19px}section{padding:40px 0}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <nav>
-    <a class="logo" href="#home">ALIY<span>.</span></a>
-    <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-    </div>
-  </nav>
-
-  <main>
-    <header class="hero" id="home">
-      <div class="eyebrow">Independent Creator · Technology</div>
-      <h1>Building ideas<br>into <span>reality.</span></h1>
-      <p class="intro">
-        Hello, I'm <strong>Aliy Agni a.n.w.</strong>
-        I'm an aspiring developer and technology enthusiast
-        exploring game development, programming, and original ideas.
-        This is where my projects and learning journey come together.
-      </p>
-      <div class="actions">
-        <a class="btn primary" href="#projects">Explore my projects ↘</a>
-        <a class="btn" href="#about">About me</a>
-      </div>
-    </header>
-
-    <section id="about">
-      <div class="sectionhead">
-        <div class="eyebrow">01 / Introduction</div>
-        <h2>About Me</h2>
-      </div>
-      <div class="about">
-        <p>
-          I'm a young creator who enjoys learning how technology works
-          and turning ideas into projects. I believe every big project
-          begins with curiosity, experimentation, and consistent learning.
-        </p>
-        <p>
-          My current interests include interactive games, AI concepts,
-          programming, and developing my own scientific hypotheses.
-          I'm still learning, and every project is an opportunity to improve.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="sectionhead">
-        <div class="eyebrow">02 / Selected Work</div>
-        <h2>My Projects</h2>
-        <p class="subtitle">Ideas in progress. More to come.</p>
-      </div>
-
-      <div class="projects">
-        <article class="card">
-          <div class="number">PROJECT / 01</div>
-          <h3>JOD Studios</h3>
-          <p>
-            An independent creative studio exploring games,
-            technology, and original digital projects.
-          </p>
-          <span class="status">In Development</span>
-        </article>
-
-        <article class="card">
-          <div class="number">PROJECT / 02</div>
-          <h3>Aksikontal</h3>
-          <p>
-            An independent hypothesis project exploring ideas
-            about gravity, motion, electricity, energy, and probability.
-            The concepts are being developed and require scientific testing.
-          </p>
-          <a class="textlink" href="https://aliyagni14-commits.github.io/Aksikontal-2.0/" target="_blank" rel="noopener">
-            Visit project ↗
-          </a>
-          <br><span class="status">Research &amp; Learning</span>
-        </article>
-
-        <article class="card">
-          <div class="number">PROJECT / 03</div>
-          <h3>ALIY</h3>
-          <p>
-            A beginner programming project exploring a personal
-            assistant with simple commands, calculations, and chat history.
-          </p>
-          <span class="status">Learning &amp; Development</span>
-        </article>
-
-        <article class="card">
-          <div class="number">PROJECT / 04</div>
-          <h3>Roblox: No Change</h3>
-          <p>
-            A story-driven FPS game concept developed with Roblox Studio,
-            featuring a planned battlefield, lobby, and gameplay systems.
-          </p>
-          <span class="status">Game in Development</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="skills">
-      <div class="sectionhead">
-        <div class="eyebrow">03 / Growth</div>
-        <h2>Skills &amp; Interests</h2>
-        <p class="subtitle">Areas I'm learning and exploring.</p>
-      </div>
-      <div class="skills">
-        <span class="skill">Game Development</span>
-        <span class="skill">Roblox Studio</span>
-        <span class="skill">HTML &amp; CSS</span>
-        <span class="skill">Python</span>
-        <span class="skill">AI Concepts</span>
-        <span class="skill">Scientific Exploration</span>
-        <span class="skill">Creative Problem Solving</span>
-      </div>
-    </section>
-
-    <section>
-      <div class="about">
-        <div class="eyebrow">04 / The Vision</div>
-        <h2>Still learning. Always building.</h2>
-        <p class="subtitle">
-          My goal is to keep improving, build useful projects,
-          and turn ambitious ideas into things people can experience.
-        </p>
-        <a class="btn primary" href="#home">Back to top ↑</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    © 2026 Aliy Agni a.n.w. · Personal Portfolio
-    <br>Built with curiosity and code.
-  </footer>
+<nav>
+<a class="logo" href="#home">ALIY AGNI</a>
+<div class="navlinks">
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
 </div>
+</nav>
+<main>
+<header class="hero" id="home">
+<div class="eyebrow">Independent Creator · Indonesia</div>
+<h1>Building ideas<br>into <span>reality.</span></h1>
+<p>Saya Aliy Agni a.n.w., kreator pemula yang tertarik pada teknologi, pemrograman, game development, dan eksplorasi ide sains.</p>
+<div class="actions">
+<a class="btn primary" href="#projects">Jelajahi Proyek ↗</a>
+<a class="btn" href="#about">Tentang Saya</a>
+</div>
+</header>
+
+<section id="about" class="reveal">
+<div class="section-label">01 / ABOUT</div>
+<h2>Di balik ide.</h2>
+<div class="about">
+<p>Saya membangun proyek secara bertahap sambil belajar. Fokus saya adalah mengubah ide menjadi karya yang bisa dicoba, dipelajari, dan dikembangkan. Setiap proyek masih dalam proses dan menjadi bagian dari perjalanan belajar saya.</p>
+</div>
+</section>
+
+<section id="projects" class="reveal">
+<div class="section-label">02 / SELECTED WORK</div>
+<h2>Proyek pilihan.</h2>
+<div class="grid">
+<article class="project">
+<div class="project-icon">🎮</div><span class="tag">GAME STUDIO</span>
+<h3>JOD Studios</h3>
+<p>Identitas studio untuk mengembangkan game dan proyek teknologi kreatif.</p>
+<div class="progress-label"><span>Development</span><span>25%</span></div><div class="progress"><div style="width:25%"></div></div>
+<div class="actions"><a class="btn" href="#contact">Hubungi ↗</a></div>
+</article>
+<article class="project">
+<div class="project-icon">🧪</div><span class="tag">SCIENCE PROJECT</span>
+<h3>Aksikontal</h3>
+<p>Eksplorasi ide dan hipotesis tentang fenomena alam. Hipotesisnya masih perlu diuji dan bukan hukum sains yang sudah terbukti.</p>
+<div class="progress-label"><span>Development</span><span>35%</span></div><div class="progress"><div style="width:35%"></div></div>
+<div class="actions"><a class="btn primary" href="https://aliyagni14-commits.github.io/Aksikontal-2.0/" target="_blank" rel="noopener">Buka Proyek ↗</a></div>
+</article>
+<article class="project">
+<div class="project-icon">🤖</div><span class="tag">AI EXPERIMENT</span>
+<h3>ALIY</h3>
+<p>Eksperimen asisten AI sederhana untuk belajar pemrograman dan memahami teknologi.</p>
+<div class="progress-label"><span>Development</span><span>15%</span></div><div class="progress"><div style="width:15%"></div></div>
+<div class="actions"><a class="btn" href="#contact">Lihat perkembangan ↗</a></div>
+</article>
+<article class="project">
+<div class="project-icon">⚔️</div><span class="tag">GAME DEVELOPMENT</span>
+<h3>No Change</h3>
+<p>Proyek game perang bergaya FPS yang dikembangkan menggunakan Roblox Studio.</p>
+<div class="progress-label"><span>Development</span><span>45%</span></div><div class="progress"><div style="width:45%"></div></div>
+<div class="actions"><a class="btn" href="#contact">Lihat perkembangan ↗</a></div>
+</article>
+</div>
+<p style="font-size:12px">Catatan: persentase adalah perkiraan contoh. Ubah sesuai kemajuan proyek yang sebenarnya.</p>
+</section>
+
+<section id="skills" class="reveal">
+<div class="section-label">03 / CURRENT SKILLS</div>
+<h2>Yang sedang dipelajari.</h2>
+<div class="skills">
+<span>HTML & CSS</span><span>JavaScript Basics</span><span>Roblox Studio</span><span>Game Design</span><span>Python Basics</span><span>Science Exploration</span><span>Problem Solving</span>
+</div>
+</section>
+
+<section id="contact" class="reveal">
+<div class="section-label">04 / CONTACT</div>
+<h2>Terhubung dengan saya.</h2>
+<p>Portofolio ini adalah catatan perjalanan belajar dan pengembangan proyek saya.</p>
+<div class="actions"><a class="btn primary" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener">GitHub ↗</a><a class="btn" href="#home">Kembali ke atas ↑</a></div>
+</section>
+</main>
+<footer>© <span id="year">2026</span> Aliy Agni a.n.w. · Built with curiosity.</footer>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+const items=document.querySelectorAll(".reveal");
+if("IntersectionObserver" in window){
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("visible");
+observer.unobserve(entry.target);
+}
+});
+},{threshold:0.12});
+items.forEach(item=>observer.observe(item));
+}else{items.forEach(item=>item.classList.add("visible"))}
+</script>
 </body>
 </html>
