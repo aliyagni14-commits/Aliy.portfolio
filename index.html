@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b12">
+<meta name="description" content="The personal portfolio of Aliy Agni a.n.w. — developer, creator, and technology enthusiast.">
+<title>Aliy Agni a.n.w. | Portfolio</title>
+<style>
+:root {
+  --bg: #080b12;
+  --surface: #101622;
+  --border: #253147;
+  --text: #f1f5ff;
+  --muted: #98a6bd;
+  --blue: #72a7ff;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7;
+}
+a { color: inherit; text-decoration: none; }
+.wrap { width: min(1060px, 90%); margin: auto; }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.logo { font-weight: 800; letter-spacing: 1px; }
+.logo span { color: var(--blue); }
+.navlinks { display: flex; gap: 22px; font-size: 14px; color: var(--muted); }
+.navlinks a:hover, .textlink:hover { color: var(--blue); }
+.hero { padding: 100px 0 85px; }
+.eyebrow {
+  color: var(--blue);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(42px, 8vw, 78px);
+  line-height: 1.08;
+  letter-spacing: -3px;
+  margin: 18px 0;
+}
+h1 span {
+  color: var(--blue);
+}
+.intro { max-width: 620px; color: var(--muted); font-size: 17px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.btn {
+  display: inline-block;
+  border: 1px solid var(--border);
+  padding: 11px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.btn.primary { background: var(--blue); color: #08101e; border-color: var(--blue); }
+.btn:hover { transform: translateY(-2px); }
+section { padding: 55px 0; }
+.sectionhead { margin-bottom: 25px; }
+h2 { font-size: 29px; margin: 0 0 8px; }
+.subtitle { color: var(--muted); margin: 0; }
+.about {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  border-radius: 14px;
+  padding: 25px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  padding: 23px;
+  transition: border-color .2s, transform .2s;
+}
+.card:hover { border-color: var(--blue); transform: translateY(-3px); }
+.number { color: var(--blue); font-size: 13px; letter-spacing: 2px; }
+.card h3 { margin: 12px 0 6px; font-size: 21px; }
+.card p { color: var(--muted); font-size: 14px; margin: 0 0 15px; }
+.status {
+  display: inline-block;
+  color: #b9d3ff;
+  border: 1px solid #30496f;
+  background: #17253b;
+  border-radius: 30px;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+.skills { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill {
+  border: 1px solid var(--border);
+  padding: 8px 13px;
+  border-radius: 7px;
+  background: var(--surface);
+  color: #d6e2f7;
+  font-size: 13px;
+}
+footer {
+  border-top: 1px solid var(--border);
+  padding: 25px 0;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .navlinks { gap: 12px; font-size: 12px; }
+  .hero { padding: 70px 0 55px; }
+  h1 { letter-spacing: -2px; }
+  .projects { grid-template-columns: 1fr; }
+  section { padding: 38px 0; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#home">ALIY<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+    </div>
+  </nav>
+
+  <main>
+    <header class="hero" id="home">
+      <div class="eyebrow">Independent Creator · Technology</div>
+      <h1>Building ideas<br>into <span>reality.</span></h1>
+      <p class="intro">
+        Hello, I'm <strong>Aliy Agni a.n.w.</strong>
+        I'm an aspiring developer and technology enthusiast
+        exploring game development, programming, and original ideas.
+        This is where my projects and learning journey come together.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">Explore my projects ↘</a>
+        <a class="btn" href="#about">About me</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="sectionhead">
+        <div class="eyebrow">01 / Introduction</div>
+        <h2>About Me</h2>
+      </div>
+      <div class="about">
+        <p>
+          I'm a young creator who enjoys learning how technology works
+          and turning ideas into projects. I believe every big project
+          begins with curiosity, experimentation, and consistent learning.
+        </p>
+        <p>
+          My current interests include interactive games, AI concepts,
+          programming, and developing my own scientific hypotheses.
+          I'm still learning, and every project is an opportunity to improve.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="sectionhead">
+        <div class="eyebrow">02 / Selected Work</div>
+        <h2>My Projects</h2>
+        <p class="subtitle">Ideas in progress. More to come.</p>
+      </div>
+
+      <div class="projects">
+        <article class="card">
+          <div class="number">PROJECT / 01</div>
+          <h3>JOD Studios</h3>
+          <p>
+            An independent creative studio exploring games,
+            technology, and original digital projects.
+          </p>
+          <span class="status">In Development</span>
+        </article>
+
+        <article class="card">
+          <div class="number">PROJECT / 02</div>
+          <h3>Aksikontal</h3>
+          <p>
+            An independent hypothesis project exploring ideas
+            about gravity, motion, electricity, energy, and probability.
+            The concepts are being developed and require scientific testing.
+          </p>
+          <a class="textlink" href="https://aliyagni14-commits.github.io/Aksikontal-2.0/" target="_blank" rel="noopener">
+            Visit project ↗
+          </a>
+          <br><span class="status">Research &amp; Learning</span>
+        </article>
+
+        <article class="card">
+          <div class="number">PROJECT / 03</div>
+          <h3>ALIY</h3>
+          <p>
+            A beginner programming project exploring a personal
+            assistant with simple commands, calculations, and chat history.
+          </p>
+          <span class="status">Learning &amp; Development</span>
+        </article>
+
+        <article class="card">
+          <div class="number">PROJECT / 04</div>
+          <h3>Roblox: No Change</h3>
+          <p>
+            A story-driven FPS game concept developed with Roblox Studio,
+            featuring a planned battlefield, lobby, and gameplay systems.
+          </p>
+          <span class="status">Game in Development</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="sectionhead">
+        <div class="eyebrow">03 / Growth</div>
+        <h2>Skills &amp; Interests</h2>
+        <p class="subtitle">Areas I'm learning and exploring.</p>
+      </div>
+      <div class="skills">
+        <span class="skill">Game Development</span>
+        <span class="skill">Roblox Studio</span>
+        <span class="skill">HTML &amp; CSS</span>
+        <span class="skill">Python</span>
+        <span class="skill">AI Concepts</span>
+        <span class="skill">Scientific Exploration</span>
+        <span class="skill">Creative Problem Solving</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="about">
+        <div class="eyebrow">04 / The Vision</div>
+        <h2>Still learning. Always building.</h2>
+        <p class="subtitle">
+          My goal is to keep improving, build useful projects,
+          and turn ambitious ideas into things people can experience.
+        </p>
+        <a class="btn primary" href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Aliy Agni a.n.w. · Personal Portfolio
+    <br>Built with curiosity and code.
+  </footer>
+</div>
+</body>
+</html>
