@@ -1,213 +1,358 @@
 
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#030712">
-<meta name="description" content="Aliy Agni a.n.w. — portfolio, projects, technology and creative ideas.">
-<title>Aliy Agni | My Portfolio</title>
+<meta name="description" content="Aliy Agni a.n.w. — Independent Creator, Developer, and Founder of JOD Studios.">
+<title>Aliy Agni a.n.w. | Official Portfolio</title>
+
 <style>
-:root{--bg:#030712;--panel:#0b1427;--blue:#3685ff;--cyan:#56d5ff;--white:#f4f7ff;--muted:#9ba9c4}
+:root {
+  --bg:#030712;
+  --panel:#0b1427;
+  --blue:#3685ff;
+  --cyan:#56d5ff;
+  --white:#f4f7ff;
+  --muted:#9ba9c4;
+}
 *{box-sizing:border-box;scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+body{
+  margin:0;background:var(--bg);color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;overflow-x:hidden
+}
 a{color:inherit;text-decoration:none}
-#stars{position:fixed;inset:0;z-index:-2;width:100%;height:100%;pointer-events:none}
-body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 18% 25%,#092d6a55,transparent 43%),radial-gradient(ellipse at 85% 60%,#123b7050,transparent 40%)}
-nav{position:fixed;top:17px;left:50%;transform:translateX(-50%);width:min(92%,650px);padding:10px 13px;display:flex;justify-content:center;align-items:center;gap:22px;background:#080e1cce;border:1px solid #ffffff24;border-radius:40px;backdrop-filter:blur(18px);z-index:20;box-shadow:0 8px 40px #0005}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:-2;pointer-events:none}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at 18% 25%,#092d6a55,transparent 43%),
+  radial-gradient(ellipse at 85% 60%,#123b7050,transparent 40%)
+}
+nav{
+  position:fixed;top:15px;left:50%;transform:translateX(-50%);
+  width:min(94%,680px);padding:12px;
+  display:flex;justify-content:space-around;align-items:center;gap:10px;
+  background:#080e1cdd;border:1px solid #ffffff24;border-radius:40px;
+  backdrop-filter:blur(18px);z-index:20
+}
 nav a{font-size:12px;color:#c7d4eb;transition:.2s}
 nav a:hover{color:var(--cyan)}
-nav .brand{color:#fff;font-weight:800}
+nav .brand{font-weight:800;color:white;white-space:nowrap}
 main{width:min(1060px,90%);margin:auto}
-.hero{min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;padding:105px 0 65px}
+.hero{
+  min-height:100vh;display:grid;grid-template-columns:1.1fr .9fr;
+  align-items:center;gap:35px;padding:105px 0 65px
+}
 .hello{color:var(--cyan);font-size:12px;letter-spacing:3px;text-transform:uppercase}
 h1{font-size:clamp(42px,7vw,76px);line-height:1.02;letter-spacing:-3px;margin:18px 0}
-h1 span,.gradient{background:linear-gradient(90deg,#57a1ff,#78e6ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+h1 span,.gradient{
+  background:linear-gradient(90deg,#57a1ff,#78e6ff);
+  background-clip:text;-webkit-background-clip:text;color:transparent
+}
 .hero p{max-width:510px;color:var(--muted);font-size:14px;line-height:1.9}
 .buttons{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:9px;font-size:12px;font-weight:bold;border:1px solid #ffffff25;transition:.25s}
-.btn.primary{background:linear-gradient(110deg,#1769e8,#319bff);border-color:#3685ff;color:white;box-shadow:0 5px 25px #1674ff35}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:11px 17px;border-radius:9px;font-size:12px;font-weight:bold;
+  border:1px solid #ffffff25;transition:.25s;cursor:pointer
+}
+.btn.primary{
+  background:linear-gradient(110deg,#1769e8,#319bff);
+  border-color:#3685ff;color:white;box-shadow:0 5px 25px #1674ff35
+}
 .btn:hover{transform:translateY(-3px);border-color:var(--cyan)}
-.id-wrap{display:flex;justify-content:center;align-items:center;perspective:900px;animation:float 5s ease-in-out infinite}
-.id-card{position:relative;width:min(290px,85%);min-height:380px;padding:23px;border:1px solid #8bcaff77;border-radius:17px;background:linear-gradient(145deg,#102647e8,#050a17ed 65%);box-shadow:0 0 55px #1264ff2b,inset 0 0 35px #227aff0d;transform:rotate(5deg)}
-.id-card:before{content:"";position:absolute;inset:-1px;border-radius:17px;padding:1px;background:linear-gradient(135deg,#7ae4ff,#1b4d9b33,transparent);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
-.id-top{display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:2px;color:#a7d8ff}
-.avatar{height:155px;margin:24px 0 18px;border-radius:11px;background:radial-gradient(circle at 50% 35%,#1d5f9c55,transparent 45%),linear-gradient(140deg,#0a1b35,#050b18);border:1px solid #5abaff3d;display:flex;align-items:center;justify-content:center}
+.id-wrap{display:flex;justify-content:center;align-items:center;animation:float 5s ease-in-out infinite}
+.id-card{
+  width:min(290px,90%);min-height:370px;padding:23px;
+  border:1px solid #8bcaff77;border-radius:17px;
+  background:linear-gradient(145deg,#102647e8,#050a17ed 65%);
+  box-shadow:0 0 55px #1264ff2b,inset 0 0 35px #227aff0d
+}
+.id-top,.id-bottom{
+  display:flex;justify-content:space-between;gap:8px;
+  font-size:9px;letter-spacing:1px;color:#a7d8ff
+}
+.avatar{
+  height:155px;margin:24px 0 18px;border-radius:11px;
+  background:radial-gradient(circle,#1d5f9c55,transparent 60%),#050b18;
+  border:1px solid #5abaff3d;display:flex;align-items:center;justify-content:center
+}
 .avatar span{font-size:65px;font-weight:900;letter-spacing:-5px;color:#a8dfff;text-shadow:0 0 25px #329bff99}
-.id-card h2{font-size:23px;margin:0;letter-spacing:-.5px}
+.id-card h2{font-size:23px;margin:0}
 .id-card p{font-size:11px;color:var(--muted);margin:6px 0 17px}
 .id-line{height:1px;background:#5baeff33;margin:14px 0}
-.id-bottom{display:flex;justify-content:space-between;color:#8bbbe8;font-size:9px;letter-spacing:1px}
-section{padding:80px 0;scroll-margin-top:75px}
-.kicker{color:var(--cyan);font-size:11px;letter-spacing:3px;text-transform:uppercase}
+section{padding:75px 0;scroll-margin-top:75px}
+.kicker{color:var(--cyan);font-size:11px;letter-spacing:3px;text-transform:uppercase;text-align:center}
 .section-title{text-align:center;font-size:clamp(29px,5vw,43px);margin:12px 0}
 .section-desc{text-align:center;color:var(--muted);font-size:13px;max-width:550px;margin:0 auto 34px;line-height:1.8}
-.about-box{max-width:760px;margin:auto;border:1px solid #ffffff17;border-radius:15px;padding:26px;background:linear-gradient(135deg,#101b30b8,#080e1a);color:var(--muted);font-size:14px;line-height:2}
-.about-box strong{color:#fff}
+.about-box{
+  max-width:760px;margin:auto;border:1px solid #ffffff17;border-radius:15px;
+  padding:26px;background:linear-gradient(135deg,#101b30b8,#080e1a);
+  color:var(--muted);font-size:14px;line-height:2
+}
+.about-box strong{color:white}
 .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
-.card{padding:23px;border-radius:14px;background:linear-gradient(145deg,#0d1a30ed,#070c18ed);border:1px solid #ffffff18;transition:.25s;position:relative;overflow:hidden}
+.card{
+  padding:23px;border-radius:14px;background:linear-gradient(145deg,#0d1a30ed,#070c18ed);
+  border:1px solid #ffffff18;transition:.25s
+}
 .card:hover{transform:translateY(-5px);border-color:#428eff88;box-shadow:0 12px 40px #001d4c55}
 .card-icon{font-size:27px}
 .card h3{font-size:19px;margin:15px 0 8px}
-.card p{font-size:12px;line-height:1.8;color:var(--muted);min-height:43px}
-.chip{display:inline-block;font-size:9px;color:#91caff;border:1px solid #428eff55;background:#1556a51c;border-radius:20px;padding:5px 9px}
-.card .btn{margin-top:12px}
+.card p{font-size:12px;line-height:1.8;color:var(--muted);min-height:45px}
+.chip{
+  display:inline-block;font-size:9px;color:#91caff;border:1px solid #428eff55;
+  background:#1556a51c;border-radius:20px;padding:5px 9px
+}
+.progress-label{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin:17px 0 7px}
+.progress{height:5px;background:#1a2940;border-radius:10px;overflow:hidden}
+.progress div{height:100%;background:linear-gradient(90deg,#3685ff,#56d5ff);border-radius:10px}
+.card .btn{margin-top:15px}
 .skills{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
-.skill{min-height:100px;padding:15px 7px;border:1px solid #ffffff15;border-radius:12px;background:#0a1427c9;text-align:center;display:flex;flex-direction:column;justify-content:center;gap:10px;transition:.2s}
+.skill{
+  min-height:90px;padding:15px 7px;border:1px solid #ffffff15;border-radius:12px;
+  background:#0a1427c9;text-align:center;display:flex;flex-direction:column;
+  justify-content:center;gap:10px;transition:.2s
+}
 .skill:hover{border-color:#4d9cff;transform:translateY(-3px)}
-.skill .symbol{font-size:25px;color:#75baff}
+.symbol{font-size:24px;color:#75baff}
 .skill span:last-child{font-size:11px;color:#d6e4fa}
 .edu{max-width:680px;margin:auto;display:grid;gap:13px}
-.edu-item{display:flex;gap:15px;align-items:flex-start;padding:18px;border:1px solid #ffffff17;background:#0b1427c9;border-radius:12px}
+.edu-item{
+  display:flex;gap:15px;align-items:flex-start;padding:18px;
+  border:1px solid #ffffff17;background:#0b1427c9;border-radius:12px
+}
 .edu-icon{font-size:22px}
 .edu-item h3{font-size:14px;margin:0 0 5px}
-.edu-item p{font-size:12px;color:var(--muted);margin:0}
-.contact{max-width:650px;margin:auto;padding:27px;background:#0b1427d9;border:1px solid #ffffff1c;border-radius:15px;text-align:center}
+.edu-item p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}
+.contact{
+  max-width:650px;margin:auto;padding:27px;background:#0b1427d9;
+  border:1px solid #ffffff1c;border-radius:15px;text-align:center
+}
 .contact p{color:var(--muted);font-size:13px;line-height:1.8}
 footer{text-align:center;border-top:1px solid #ffffff15;padding:25px 12px;color:#7888a5;font-size:11px}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.show{opacity:1;transform:translateY(0)}
-@keyframes float{0%,100%{transform:translateY(0) rotate(1deg)}50%{transform:translateY(-13px) rotate(-2deg)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @media(max-width:680px){
- nav{top:10px;gap:0;justify-content:space-around;width:94%;padding:12px 7px}
- nav a{font-size:10px}
- main{width:88%}
- .hero{grid-template-columns:1fr;text-align:center;gap:25px;padding-top:125px}
- .hero p{margin:0 auto}
- .buttons{justify-content:center}
- .id-wrap{margin:15px 0 5px}
- .id-card{width:255px;min-height:345px;padding:19px}
- .avatar{height:125px;margin:18px 0}
- .avatar span{font-size:55px}
- section{padding:62px 0}
- .grid{grid-template-columns:1fr}
- .skills{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
- .skill{min-height:88px}
- .about-box{padding:19px}
+  nav{top:10px;gap:0;width:96%;padding:12px 5px}
+  nav a{font-size:10px}
+  main{width:88%}
+  .hero{grid-template-columns:1fr;text-align:center;gap:25px;padding-top:125px}
+  .hero p{margin:0 auto}
+  .buttons{justify-content:center}
+  .id-wrap{margin:15px 0 5px}
+  .id-card{width:255px;min-height:345px;padding:19px}
+  .avatar{height:125px;margin:18px 0}
+  .avatar span{font-size:55px}
+  section{padding:60px 0}
+  .grid{grid-template-columns:1fr}
+  .skills{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .skill{min-height:85px}
+  .about-box{padding:19px}
 }
-@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 <canvas id="stars"></canvas>
 
 <nav>
-<a class="brand" href="#home">ALIY AGNI</a>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#portfolio">Portfolio</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+  <a class="brand" href="#home">ALIY AGNI</a>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#portfolio">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
 </nav>
 
 <main>
 <header class="hero" id="home">
-<div>
-<div class="hello">✦ Independent Creator · Indonesia</div>
-<h1>Welcome to<br><span>My Portfolio</span></h1>
-<p>Halo! Saya Aliy Agni a.n.w. Saya sedang membangun proyek di bidang game development, teknologi, pemrograman, dan eksplorasi ide sains. Selamat datang di ruang karya saya.</p>
-<div class="buttons">
-<a class="btn primary" href="#portfolio">Lihat Proyek ↗</a>
-<a class="btn" href="#about">Tentang Saya</a>
-</div>
-</div>
-<div class="id-wrap">
-<div class="id-card">
-<div class="id-top"><span>CREATOR ID</span><span>✦ AA-001</span></div>
-<div class="avatar"><span>AA</span></div>
-<h2>Aliy Agni <span class="gradient">a.n.w.</span></h2>
-<p>Developer in Progress · Creative Thinker</p>
-<div class="id-line"></div>
-<div class="id-bottom"><span>INDONESIA</span><span>BUILD THE FUTURE</span></div>
-</div>
-</div>
+  <div>
+    <div class="hello">✦ Independent Creator · Indonesia</div>
+    <h1>Welcome to<br><span>My Portfolio</span></h1>
+    <p>I'm Aliy Agni a.n.w., an aspiring creator exploring game development, technology, programming, and scientific ideas. This is where I share my projects and creative journey.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#portfolio">Explore Projects ↗</a>
+      <a class="btn" href="#about">About Me</a>
+    </div>
+  </div>
+  <div class="id-wrap">
+    <div class="id-card">
+      <div class="id-top"><span>CREATOR ID</span><span>✦ AA-001</span></div>
+      <div class="avatar"><span>AA</span></div>
+      <h2>Aliy Agni <span class="gradient">a.n.w.</span></h2>
+      <p>Developer in Progress · Creative Thinker</p>
+      <div class="id-line"></div>
+      <div class="id-bottom"><span>INDONESIA</span><span>BUILD THE FUTURE</span></div>
+    </div>
+  </div>
 </header>
 
 <section id="about" class="reveal">
-<div style="text-align:center"><div class="kicker">01 / About Me</div><h2 class="section-title">About <span class="gradient">Me</span></h2></div>
-<div class="about-box">
-<strong>Hai, saya Aliy Agni a.n.w.</strong><br>
-Saya seorang kreator muda yang suka belajar dan membangun sesuatu dari ide sendiri. Saya mengembangkan proyek secara bertahap sambil mempelajari teknologi baru. Fokus saya adalah kreativitas, konsistensi, dan membuat ide menjadi karya nyata.
-</div>
+  <div class="kicker">01 / About Me</div>
+  <h2 class="section-title">About <span class="gradient">Me</span></h2>
+  <div class="about-box">
+    <strong>Hello, I'm Aliy Agni a.n.w.</strong><br>
+    I'm a young creator who enjoys learning, experimenting, and building original ideas. I'm developing personal projects while exploring new technologies. My focus is creativity, consistency, problem-solving, and turning ideas into real projects.
+  </div>
 </section>
 
 <section id="portfolio" class="reveal">
-<div class="kicker" style="text-align:center">02 / Selected Work</div>
-<h2 class="section-title">My <span class="gradient">Portfolio</span></h2>
-<p class="section-desc">Beberapa proyek yang sedang saya bangun dan kembangkan.</p>
-<div class="grid">
-<article class="card"><div class="card-icon">🎮</div><span class="chip">GAME STUDIO</span><h3>JOD Studios</h3><p>Studio kreatif untuk membangun game dan menjelajahi ide teknologi baru.</p><a class="btn" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener">Explore ↗</a></article>
-<article class="card"><div class="card-icon">🧪</div><span class="chip">SCIENCE PROJECT</span><h3>Aksikontal</h3><p>Proyek eksplorasi rumus dan hipotesis pribadi tentang fenomena alam yang perlu diuji.</p><a class="btn primary" href="https://aliyagni14-commits.github.io/Aksikontal-2.0/" target="_blank" rel="noopener">Visit Project ↗</a></article>
-<article class="card"><div class="card-icon">🤖</div><span class="chip">AI EXPERIMENT</span><h3>ALIY</h3><p>Eksperimen asisten digital sederhana sebagai perjalanan belajar AI dan pemrograman.</p><a class="btn" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener">Explore ↗</a></article>
-<article class="card"><div class="card-icon">⚔️</div><span class="chip">GAME DEVELOPMENT</span><h3>No Change</h3><p>Proyek game FPS berbasis Roblox Studio dengan fokus pada gameplay dan suasana sinematik.</p><a class="btn" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener">Project Updates ↗</a></article>
-</div>
+  <div class="kicker">02 / Selected Work</div>
+  <h2 class="section-title">My <span class="gradient">Portfolio</span></h2>
+  <p class="section-desc">Explore the projects I'm currently building and developing.</p>
+
+  <div class="grid">
+    <article class="card">
+      <div class="card-icon">🎮</div>
+      <span class="chip">GAME STUDIO</span>
+      <h3>JOD Studios</h3>
+      <p>A creative studio focused on developing games and exploring new technology projects.</p>
+      <div class="progress-label"><span>Development</span><span>In Progress</span></div>
+      <div class="progress"><div style="width:35%"></div></div>
+      <a class="btn primary" href="https://whatsapp.com/channel/0029VbDReG83mFY7C2BEmN0s" target="_blank" rel="noopener noreferrer">WhatsApp Channel ↗</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">🧪</div>
+      <span class="chip">SCIENCE PROJECT</span>
+      <h3>Aksikontal</h3>
+      <p>A personal exploration of formulas and hypotheses about natural phenomena that still require testing.</p>
+      <div class="progress-label"><span>Development</span><span>In Progress</span></div>
+      <div class="progress"><div style="width:35%"></div></div>
+      <a class="btn primary" href="https://aliyagni14-commits.github.io/Aksikontal-2.0/" target="_blank" rel="noopener noreferrer">Visit Project ↗</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">🤖</div>
+      <span class="chip">AI EXPERIMENT</span>
+      <h3>ALIY</h3>
+      <p>An experimental digital assistant project created as part of my journey into AI and programming.</p>
+      <div class="progress-label"><span>Development</span><span>In Progress</span></div>
+      <div class="progress"><div style="width:15%"></div></div>
+      <a class="btn" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a>
+    </article>
+
+    <article class="card">
+      <div class="card-icon">⚔️</div>
+      <span class="chip">GAME DEVELOPMENT</span>
+      <h3>No Change</h3>
+      <p>A Roblox Studio FPS game project focused on gameplay, atmosphere, and cinematic presentation.</p>
+      <div class="progress-label"><span>Development</span><span>In Progress</span></div>
+      <div class="progress"><div style="width:45%"></div></div>
+      <a class="btn" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener noreferrer">Project Updates ↗</a>
+    </article>
+  </div>
+  <p class="section-desc" style="margin-top:20px;font-size:11px">Project progress indicators are estimates and can be updated as development continues.</p>
 </section>
 
 <section id="skills" class="reveal">
-<div class="kicker" style="text-align:center">03 / Technologies</div>
-<h2 class="section-title">My <span class="gradient">Skills</span></h2>
-<p class="section-desc">Teknologi dan kemampuan yang sedang dipelajari.</p>
-<div class="skills">
-<div class="skill"><span class="symbol">⌘</span><span>HTML</span></div>
-<div class="skill"><span class="symbol">✳</span><span>CSS</span></div>
-<div class="skill"><span class="symbol">JS</span><span>JavaScript</span></div>
-<div class="skill"><span class="symbol">🐍</span><span>Python</span></div>
-<div class="skill"><span class="symbol">🎮</span><span>Roblox Studio</span></div>
-<div class="skill"><span class="symbol">🧩</span><span>Game Design</span></div>
-<div class="skill"><span class="symbol">⚡</span><span>Problem Solving</span></div>
-<div class="skill"><span class="symbol">🔬</span><span>Science</span></div>
-</div>
+  <div class="kicker">03 / Technologies</div>
+  <h2 class="section-title">My <span class="gradient">Skills</span></h2>
+  <p class="section-desc">Technologies and skills I'm learning and practicing.</p>
+  <div class="skills">
+    <div class="skill"><span class="symbol">⌘</span><span>HTML</span></div>
+    <div class="skill"><span class="symbol">✳</span><span>CSS</span></div>
+    <div class="skill"><span class="symbol">JS</span><span>JavaScript</span></div>
+    <div class="skill"><span class="symbol">🐍</span><span>Python</span></div>
+    <div class="skill"><span class="symbol">🎮</span><span>Roblox Studio</span></div>
+    <div class="skill"><span class="symbol">🧩</span><span>Game Design</span></div>
+    <div class="skill"><span class="symbol">⚡</span><span>Problem Solving</span></div>
+    <div class="skill"><span class="symbol">🔬</span><span>Science</span></div>
+  </div>
 </section>
 
 <section id="education" class="reveal">
-<div class="kicker" style="text-align:center">04 / Learning Journey</div>
-<h2 class="section-title">Education & <span class="gradient">Growth</span></h2>
-<p class="section-desc">Terus belajar, bereksperimen, dan mengembangkan kemampuan.</p>
-<div class="edu">
-<div class="edu-item"><div class="edu-icon">📚</div><div><h3>Learning Fundamentals</h3><p>Mempelajari dasar-dasar matematika, sains, dan teknologi.</p></div></div>
-<div class="edu-item"><div class="edu-icon">💻</div><div><h3>Self-Learning & Projects</h3><p>Belajar pemrograman melalui eksperimen dan proyek pribadi.</p></div></div>
-<div class="edu-item"><div class="edu-icon">🚀</div><div><h3>Future Goals</h3><p>Membangun proyek yang lebih baik seiring bertambahnya pengalaman.</p></div></div>
-</div>
+  <div class="kicker">04 / Learning Journey</div>
+  <h2 class="section-title">Education & <span class="gradient">Growth</span></h2>
+  <p class="section-desc">Learning, experimenting, and improving one project at a time.</p>
+  <div class="edu">
+    <div class="edu-item"><div class="edu-icon">📚</div><div><h3>Learning Fundamentals</h3><p>Exploring the foundations of mathematics, science, and technology.</p></div></div>
+    <div class="edu-item"><div class="edu-icon">💻</div><div><h3>Self-Learning & Projects</h3><p>Learning programming through hands-on experiments and personal projects.</p></div></div>
+    <div class="edu-item"><div class="edu-icon">🚀</div><div><h3>Future Goals</h3><p>Building better projects and growing my skills through experience.</p></div></div>
+  </div>
 </section>
 
 <section id="contact" class="reveal">
-<div class="kicker" style="text-align:center">05 / Get In Touch</div>
-<h2 class="section-title">Hubungi <span class="gradient">Saya</span></h2>
-<div class="contact">
-<p>Ingin melihat perkembangan proyek atau mengenal karya saya lebih jauh? Kunjungi profil GitHub untuk melihat proyek yang tersedia.</p>
-<a class="btn primary" href="https://github.com/aliyagni14-commits" target="_blank" rel="noopener">GitHub Profile ↗</a>
-</div>
+  <div class="kicker">05 / Get In Touch</div>
+  <h2 class="section-title">Let's <span class="gradient">Connect</span></h2>
+  <div class="contact">
+    <p>Want to follow my projects and see the latest updates from JOD Studios? Visit the official TikTok profile below.</p>
+    <a class="btn primary" href="https://www.tiktok.com/@jodstudios6" target="_blank" rel="noopener noreferrer">Contact via TikTok ↗</a>
+  </div>
 </section>
 </main>
 
 <footer>© <span id="year"></span> Aliy Agni a.n.w. · Built with curiosity ✦</footer>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
-const canvas=document.getElementById("stars"),ctx=canvas.getContext("2d");
-let stars=[];
-function createStars(){
-const dpr=Math.min(window.devicePixelRatio||1,2);
-canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;
-canvas.style.width=innerWidth+"px";canvas.style.height=innerHeight+"px";
-ctx.setTransform(dpr,0,0,dpr,0,0);
-stars=Array.from({length:Math.min(170,Math.floor(innerWidth/5))},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.4+.2,a:Math.random()*.7+.2,s:Math.random()*.25+.04}));
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const canvas = document.getElementById("stars");
+const ctx = canvas.getContext("2d");
+let stars = [];
+
+function createStars() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = innerWidth * dpr;
+  canvas.height = innerHeight * dpr;
+  canvas.style.width = innerWidth + "px";
+  canvas.style.height = innerHeight + "px";
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+  stars = Array.from(
+    {length: Math.min(170, Math.floor(innerWidth / 5))},
+    () => ({
+      x: Math.random() * innerWidth,
+      y: Math.random() * innerHeight,
+      r: Math.random() * 1.4 + 0.2,
+      a: Math.random() * 0.7 + 0.2,
+      s: Math.random() * 0.25 + 0.04
+    })
+  );
 }
-function drawStars(){
-ctx.clearRect(0,0,innerWidth,innerHeight);
-for(const s of stars){
-ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
-ctx.fillStyle="rgba(160,205,255,"+s.a+")";ctx.fill();
-s.y+=s.s;if(s.y>innerHeight){s.y=0;s.x=Math.random()*innerWidth}
+
+function drawStars() {
+  ctx.clearRect(0, 0, innerWidth, innerHeight);
+  for (const star of stars) {
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.r, 0, Math.PI * 2);
+    ctx.fillStyle = "rgba(160,205,255," + star.a + ")";
+    ctx.fill();
+    star.y += star.s;
+    if (star.y > innerHeight) {
+      star.y = 0;
+      star.x = Math.random() * innerWidth;
+    }
+  }
+  requestAnimationFrame(drawStars);
 }
-requestAnimationFrame(drawStars);
+
+createStars();
+drawStars();
+window.addEventListener("resize", createStars);
+
+const sections = document.querySelectorAll(".reveal");
+
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {threshold: 0.1});
+
+  sections.forEach(section => observer.observe(section));
+} else {
+  sections.forEach(section => section.classList.add("show"));
 }
-createStars();drawStars();window.addEventListener("resize",createStars);
-const sections=document.querySelectorAll(".reveal");
-if("IntersectionObserver" in window){
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}}),{threshold:.1});
-sections.forEach(s=>observer.observe(s));
-}else{sections.forEach(s=>s.classList.add("show"))}
 </script>
 </body>
 </html>
